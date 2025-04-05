@@ -1,8 +1,5 @@
 #pragma once
-#include <sstream>
 #include <string>
-#include <fstream>
-#include <iomanip>
 #include "Board.h"
 
 using namespace std;
@@ -15,7 +12,7 @@ bool getConfig(const std::string &filename, int arr[]);
 
 sf::Text renderText(const std::string& msg, const sf::Font& font, int size, sf::Color color, bool bold, bool underlined);
 
-void setDims(int &rows, int &cols, int &width, int &height, int &leaderW, int &leaderH, int &mines, const int dims[]);
+void setDims(int &rows, int &cols, int &width, int &height, int &mines, const int dims[]);
 
 std::map<std::string, sf::Texture> loadTextures();
 

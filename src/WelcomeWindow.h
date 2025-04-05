@@ -1,6 +1,5 @@
 #pragma once
-#include "Functions.h"
-#include <SFML/Graphics.hpp>
+#include <string>
 
 struct WelcomeWindow {
     int width, height;

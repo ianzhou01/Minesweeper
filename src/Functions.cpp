@@ -1,4 +1,7 @@
 #include "Functions.h"
+#include <fstream>
+#include <sstream>
+#include <iomanip>
 
 void centerTextOrigin(sf::Text &text) {
     text.setOrigin(text.getLocalBounds().left + text.getLocalBounds().width/2.0f,
@@ -32,13 +35,11 @@ sf::Text renderText(const std::string& msg, const sf::Font& font, int size, sf::
     return text;
 }
 
-void setDims(int &rows, int &cols, int &width, int &height, int &leaderW, int &leaderH, int &mines, const int dims[]) {
+void setDims(int &rows, int &cols, int &width, int &height, int &mines, const int dims[]) {
     cols = dims[0];
     rows = dims[1];
     width = dims[0] * 32;
     height = (dims[1] * 32) + 100;
-    leaderW = dims[0] * 16;
-    leaderH = (dims[1] * 16) + 50;
     mines = dims[2];
 }
 

@@ -1,4 +1,6 @@
 #include "WelcomeWindow.h"
+#include "Functions.h"
+#include <SFML/Graphics.hpp>
 
 WelcomeWindow::WelcomeWindow(int width, int height) : width(width), height(height) {}
 

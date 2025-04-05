@@ -12,11 +12,11 @@
 int main() {
     // Load dimensions from config into buffer
     int* dims = new int[3];
-    if (!getConfig("files/config.cfg", dims))
+    if (!getConfig("./../files/config.cfg", dims))
         throw runtime_error("Configuration not found!");
     // Set loaded dimensions to variables
-    int rows, cols, width, height, leaderBoardWidth, leaderBoardHeight, totalMines;
-    setDims(rows, cols, width, height, leaderBoardWidth, leaderBoardHeight, totalMines, dims);
+    int rows, cols, width, height, totalMines;
+    setDims(rows, cols, width, height, totalMines, dims);
     // Free dimension buffer array
     delete[] dims;
 

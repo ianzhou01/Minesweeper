@@ -1,6 +1,5 @@
 #pragma once
-#include "Board.h"
-#include "Button.h"
+#include <string>
 
 struct Game {
     int width, height, rows, cols, mines;

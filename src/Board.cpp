@@ -1,4 +1,5 @@
 #include "Board.h"
+#include <random>
 
 // Tile functions
 Board::Tile::Tile() : adjacentMineCount(0), isMine(false), isFlagged(false), isRevealed(false) {}

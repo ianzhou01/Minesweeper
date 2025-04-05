@@ -1,6 +1,8 @@
-#include "Game.h"
-#include "Leaderboard.h"
 #include <utility>
+#include "Game.h"
+#include "Board.h"
+#include "Button.h"
+#include "Leaderboard.h"
 #include "Functions.h"
 #include "Timer.h"
 #include "MineCounter.h"

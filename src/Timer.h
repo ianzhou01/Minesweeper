@@ -1,5 +1,4 @@
 #pragma once
-#include "Functions.h"
 #include <SFML/Graphics.hpp>
 #include <chrono>
 

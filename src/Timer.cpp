@@ -1,4 +1,5 @@
 #include "Timer.h"
+#include "Functions.h"
 
 Timer::Timer(const sf::Texture& digits, const int rows, const int cols) : running(false), paused(false) {
     sf::IntRect toCopy(0, 0, 21, 32);

@@ -1,4 +1,9 @@
+#include <iostream>
+#include <map>
+#include <fstream>
 #include "Leaderboard.h"
+#include "Functions.h"
+
 
 Leaderboard::Leaderboard(int rows, int cols) : rows(rows), cols(cols), width((float)cols * 16), height((float)(rows*16) + 50), recentlyUpdated(false), recentPlacement(-1) {
     int min, sec, time;
